@@ -7,7 +7,7 @@ trigger:
 - main
 
 pool:
-  name: Default
+  name: devsecops-init-agent
 
 steps:
 - script: echo Hello, world!
