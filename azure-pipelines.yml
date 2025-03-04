@@ -10,10 +10,19 @@ pool:
   name: devsecops-windows-java-agentpool
 
 steps:
-- script: echo Hello, world!
-  displayName: 'Run a one-line script'
+- script: |
+    echo ------------------------Java Building------------------------
+    java -version
+  displayName: 'Java Building'
 
 - script: |
-    echo Add other tasks to build, test, and deploy your project.
-    echo See https://aka.ms/yaml
-  displayName: 'Run a multi-line script'
+    echo ------------------------Sonar Scanning------------------------
+  displayName: 'Sonar Scanning'
+
+- script: |
+    echo ------------------------Security Scanning------------------------
+  displayName: 'Security Scanning'
+
+- script: |
+    echo ------------------------Artifact Publish------------------------
+  displayName: 'Artifact Publish'
