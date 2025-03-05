@@ -13,6 +13,7 @@ steps:
 - script: |
     echo ------------------------Java Building------------------------
     java -version
+    mvn clean install
   displayName: 'Java Building'
 
 - script: |
