@@ -31,6 +31,5 @@ jobs:
     - name: Build with Maven
       run: mvn -B package
     - name: List files in the repository
-        run: |
-          ls ${{ github.workspace }}
+        run: ls ${{ github.workspace }}
 
